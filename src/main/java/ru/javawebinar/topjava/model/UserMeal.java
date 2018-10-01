@@ -21,19 +21,19 @@ public class UserMeal {
         return dateTime;
     }
 
-    public LocalDate getDT_toLocalDate() {
+    public LocalDate toLocalDate() {
         return dateTime.toLocalDate();
     }
 
-    public LocalTime getDT_toLocalTime() {
+    public LocalTime toLocalTime() {
         return dateTime.toLocalTime();
     }
 
-    public boolean isBetweenTime(LocalTime startTime, LocalTime endTime)
-    {
-        return ((startTime==null || getDT_toLocalTime().compareTo(startTime)>=0 ) &&
-                (endTime==null || getDT_toLocalTime().compareTo(endTime)<=0 ));
-    }
+//    public boolean isBetweenTime(LocalTime startTime, LocalTime endTime)
+//    {
+//        return ((startTime==null || toLocalTime().compareTo(startTime)>=0 ) &&
+//                (endTime==null || toLocalTime().compareTo(endTime)<=0 ));
+//    }
 
     public String getDescription() {
         return description;
