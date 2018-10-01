@@ -29,12 +29,6 @@ public class UserMeal {
         return dateTime.toLocalTime();
     }
 
-//    public boolean isBetweenTime(LocalTime startTime, LocalTime endTime)
-//    {
-//        return ((startTime==null || toLocalTime().compareTo(startTime)>=0 ) &&
-//                (endTime==null || toLocalTime().compareTo(endTime)<=0 ));
-//    }
-
     public String getDescription() {
         return description;
     }
